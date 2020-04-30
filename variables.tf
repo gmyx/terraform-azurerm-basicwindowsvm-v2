@@ -21,6 +21,11 @@ variable "data_disk_sizes_gb" {
   default     = []
 }
 
+variable "data_disk_create_option" {
+  description = "The type of data disk to create"
+  default     = "empty"
+}
+
 variable "nic_subnetName" {
   description = "Name of the subnet to which the VM NIC will connect to"
 }
